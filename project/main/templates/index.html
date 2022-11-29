@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>창톡 - 자영업 솔루션 플랫폼</title>
+    <style>
+      html,body {
+        position: relative;
+        width: 100vw;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+      }
+
+      .swiper {
+        width: 100vw;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+    <div id="head-container">
+        <div id="header-box1">
+            <img src="../static/img/changtalkLogo.png" alt="LOGO" id="logo">
+        </div>
+        <div id="header-box2">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px">
+                    <g id="surface10083260">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(71.372551%,71.372551%,71.372551%);fill-opacity:1;" d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z M 21 5 "/>
+                    </g>
+                </svg>
+                <a>로그인</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../static/img/slide/slide1.png" alt=""></div>
+          <div class="swiper-slide"><img src="../static/img/slide/slide2.png" alt=""></div>
+          <div class="swiper-slide"><img src="../static/img/slide/slide3.png" alt=""></div>
+          <div class="swiper-slide"><img src="../static/img/slide/slide4.png" alt=""></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop : true,
+            autoplay : {
+                delay : 3000,   // 시간 설정
+            },
+        });
+    </script>
+</body>
+</html>
